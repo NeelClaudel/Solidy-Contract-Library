@@ -3,7 +3,7 @@ pragma solidity ^0.8.16;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract Unlock is ERC20 {
+contract VentureShare is ERC20 {
 
     uint256 public tokenPrice = 69420; // price in wei for 1e18 tokens
     address public teamWallet;
@@ -14,7 +14,7 @@ contract Unlock is ERC20 {
     uint256 public vc1FundsWithdrawn;
     uint256 public vc2FundsWithdrawn;
 
-    constructor(address _vc1, address _vc2) ERC20("Unlock Token", "UNLOCK") {
+    constructor(address _vc1, address _vc2) ERC20("VentureShare Token", "VentureShare") {
       deploymentTimestamp = block.timestamp;
       teamWallet = msg.sender;
       vc1 = _vc1;
